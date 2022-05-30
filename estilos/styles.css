@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    width: 100%;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#header {
+    background-color: #fffffff5;
+    border-bottom: #211f1f 1px solid;
+    position: sticky;
+    top: -25px;
+}
+
+#header nav ul {
+    text-align: center;
+}
+
+#header .liprecios a{
+    color: #5d5b5b;
+    background-color: #5d5b5b0a;
+    padding: 10px 15px;
+    border-radius: 15px;
+ 
+}
+#header .liprecios {
+    padding: 10px 15px;
+    border-radius: 15px;
+    display: inline;
+    margin: 100px;    
+}
+
+#header .liprecios a:hover {
+    background-color: #c0b415b7;
+    border-radius: 15px;
+    width: 100%;
+    color: white;
+}
+
+#header .liBuscador {
+
+    color: black;
+    padding: 5px;
+    display: inline;
+    margin: 90px;   
+
+}
+
+nav ul .liprecios a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#menunav {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#menunav div ul {
+    margin-right: 160px;
+    
+}
+
+.menuNavItems {
+    margin-top: 80px;
+}
+
+#menunav .li a {
+    padding: 10px 15px;
+    background-color: #5d5b5b0a;
+    border-radius: 15px;
+}
+
+#menunav ul li a {
+    color: rgb(81, 79, 79);
+    text-decoration: none;
+}
+
+#menunav div ul .li {
+    display: inline;
+    margin: 20px;
+}
+
+#menunav .li a:hover {
+    background-color: #5d5b5b;
+    border-radius: 15px;
+    width: 100%;
+    color: white;
+} 
+
+#menunav div img {
+    height: 100px;
+    width: auto;
+    margin-left: 180px;
+    overflow: visible;
+}
+
+.main {
+    color: #5d5b5b;
+    font-weight: bold;
+    display: flex;
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content:space-evenly ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .contenidoMain {
+      width: 40%;
+      height: auto;
+      text-align: center;
+      font-size: x-large;
+  }
+
+  .subtituloMain {
+      color: #c5992c;
+  }
+
+  .parrafoMain {
+      width: 35%;
+      font-size: large;
+      line-height: 30px
+  }
+
+.bloqueNoticias {
+    color: white;
+}
+
+
+
+.bloqueNoticias nav {
+    display: flex;
+    color: #211f1f;
+    background: linear-gradient(45deg, #c5992c, white);
+    height: 200px;
+    width: auto;
+    font-weight: bold;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content:space-evenly ;
+    text-align: center;
+}
+
+.liInformacion {
+    padding: 0px;
+}
+
+.liInformacion li {
+    display: inline;
+    margin: 30px;
+    align-items: center;
+    text-align: center; 
+}
+
+.liInformacion li a {
+    color: white;
+    text-decoration: none;
+}
+
+.liInformacion li a:hover {
+    color: #5d5b5b;
+}
+
+.tradingView {
+    text-align: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+#footer {
+    display: flex;
+    background-image: url(../images/pattern_floral_dark_background-101222.jpg!d);
+    color: white;
+    height: 130px;
+    width: auto;
+    font-weight: bold;
+    display: flex;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+    text-align: center;
+}
+
+.divFooter li {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+}
+
+.divFooterRedes li {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+}
+
+.divFooterRedes h5 {
+    margin-bottom: 0px;
+}
+.divFooterRedes ul {
+
+    padding: 0px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.divFooterRedes a {
+margin: 15px;
+}
+
+
