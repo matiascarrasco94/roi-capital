@@ -1,19 +1,21 @@
-* {                          /* reset */
+* {
+    /* reset */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;          
+    color: white;
 }
 
 
-body {                      /* generales de la web */
+body {
+    /* generales de la web */
     background-image: url(../images/Muq6OY.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
 
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
         "section"
@@ -23,114 +25,124 @@ body {                      /* generales de la web */
 
 
 
- /* comienza seccion encabezado */
+/* comienza seccion encabezado */
 
-    .header {
-        width: 100%;
-        padding: 3px;
-        grid-area: header;
-        background: linear-gradient(45deg, black, rgba(135, 131, 131, 0.238));
-        position: sticky;
-        top: -30px;
-    }
+.header {
+    width: 100%;
+    padding: 3px;
+    grid-area: header;
+    background: linear-gradient(45deg, black, rgba(135, 131, 131, 0.238));
+    position: sticky;
+    top: -30px;
+}
 
-        .navPrecios {               /* encabezado precios */
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            padding: 3px;
-        }
+.navPrecios {
+    /* encabezado precios */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 3px;
+}
 
-        .liPrecios {                /* quita viñeta encabezado precios */
-            list-style: none;
-            font-weight: bold;
-        }
+.liPrecios {
+    /* quita viñeta encabezado precios */
+    list-style: none;
+    font-weight: bold;
+}
 
-        .liPrecios a {              /* quita subrayado de links de los precios en el encabezado */
-            text-decoration: none;
-            border-radius: 15px;
-            padding: 5px 10px;
-            color: white;
-        }
+.liPrecios a {
+    /* quita subrayado de links de los precios en el encabezado */
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: white;
+}
 
-        .liPrecios a:hover {
-            width: 100%;
-            color: rgb(211, 183, 19);
-            transition: all 600ms;
-        }
+.liPrecios a:hover {
+    width: 100%;
+    color: rgb(211, 183, 19);
+    transition: all 600ms;
+}
 
-        .menuNav {                  /* bloque menu nav y logo  */
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            padding: 2px;
-        }
+.menuNav {
+    /* bloque menu nav y logo  */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 2px;
+}
 
-        .menuNavDesplegable {
-            display: none;
-        }
+.menuNavDesplegable {
+    display: none;
+}
 
-        .imagenNav img {            /* características de la imagen del logo */
-            width: 150px;      
-        }
+.imagenNav img {
+    /* características de la imagen del logo */
+    width: 150px;
+}
 
-        .imagenNav {
-            box-sizing: content-box;
-        }
+.imagenNav {
+    box-sizing: content-box;
+}
 
-        .menuNavItems {             /* posicionamiento menu de navegación */
-            display: flex;
-            align-items: flex-end;
-        }
+.menuNavItems {
+    /* posicionamiento menu de navegación */
+    display: flex;
+    align-items: flex-end;
+}
 
-        .lista {                    /* items del menu nav en una sola fila */
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-        }
+.lista {
+    /* items del menu nav en una sola fila */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
 
-        .menuNavItems .li {         /* quita viñeta de items del menu nav y espaciado */
-            list-style: none;
-            margin: 7px;
-            font-weight: bold;
-        }
+.menuNavItems .li {
+    /* quita viñeta de items del menu nav y espaciado */
+    list-style: none;
+    margin: 7px;
+    font-weight: bold;
+}
 
-        .menuNavItems .li a {       /* quita subrayado de items de menu nav */
-            text-decoration: none;
-            border-radius: 15px;
-            padding: 5px 20px;
-            color: white;
-        }
+.menuNavItems .li a {
+    /* quita subrayado de items de menu nav */
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 5px 20px;
+    color: white;
+}
 
-        .li.iniciarsesion a { 
-            background-color: rgba(239, 241, 243, 0.967);
-            color: rgb(54, 142, 242);
-        }
+.li.iniciarsesion a {
+    background-color: rgba(239, 241, 243, 0.967);
+    color: rgb(54, 142, 242);
+}
 
-        .menuNavItems .li a:hover {
-            background-color: #8a8a885c;
-            border-radius: 15px;
-            width: 100%;
-            transition: all 500ms;
-            color: white;
-            padding: 5px 20px;
-        }
+.menuNavItems .li a:hover {
+    background-color: #8a8a885c;
+    border-radius: 15px;
+    width: 100%;
+    transition: all 500ms;
+    color: white;
+    padding: 5px 20px;
+}
 
-        .li.iniciarsesion {
-            box-sizing: content-box;
-        }
+.li.iniciarsesion {
+    box-sizing: content-box;
+}
 
-        .li.iniciarsesion a:hover { 
-            background-color: #a7a7a7a9;
-            transition: all 500ms;
-        }
-        .li.iniciarsesion a:hover { 
-            color: white;
-            transition: all 1s;
-        }
+.li.iniciarsesion a:hover {
+    background-color: #a7a7a7a9;
+    transition: all 500ms;
+}
+
+.li.iniciarsesion a:hover {
+    color: white;
+    transition: all 1s;
+}
 
 /* finaliza encabezado */
 
@@ -139,147 +151,157 @@ body {                      /* generales de la web */
 
 /* comienza seccion principal */
 
-    .main {                     /* bloque padre main */
-        grid-area: main;
-        height: 600px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-    }
+.main {
+    /* bloque padre main */
+    grid-area: main;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
 
-        .contenidoMain {            /* bloque de informacion main */
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 60%;
-        }
+.contenidoMain {
+    /* bloque de informacion main */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    animation: bounceInLeft;
+    animation-duration: 2s;
+}
 
-        .contenidoMain h2 {
-                text-align: center;
-        }
+.contenidoMain h2 {
+    text-align: center;
+}
 
-        div.contenidoMain :hover {
-            color: darkgoldenrod;
-            transition: all 600ms;
-        }
+div.contenidoMain :hover {
+    color: darkgoldenrod;
+    transition: all 600ms;
+}
 
-        .contenidoMain h1 {         /* centrado vertical titulo main */
-            text-align: center;
-        }
+.contenidoMain h1 {
+    /* centrado vertical titulo main */
+    text-align: center;
+}
 
-        .subtituloMain {            /* centrado vertical subtitulo main */
-            text-align: center;
-        }
+.subtituloMain {
+    /* centrado vertical subtitulo main */
+    text-align: center;
+}
 
-        .parrafoMain {              /* centrado parrafo main */
-            width: 90%;
-            text-align: center;
-        }
+.parrafoMain {
+    /* centrado parrafo main */
+    width: 90%;
+    text-align: center;
+}
 
-        .imagenMain {               /* tamaño caja de imagen en main */
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
-        }
+.imagenMain {
+    /* tamaño caja de imagen en main */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
 
-        .imagenMain img {
+.imagenMain img {
 
-            width: 100%;
-        }
+    width: 100%;
+}
 
-        .videoNosotros {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.videoNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .videoNosotros h4 {
-            text-align: center;
-        }
+.videoNosotros h4 {
+    text-align: center;
+}
+
 /* finaliza contenido principal */
 
 
 
 /* comienza seccion noticias */
 
-    .bloqueNoticias {           /* seccion noticias gral */
-        width: 100%;
-        height: 150px;
-        grid-area: section;
-        background: linear-gradient(45deg, black, rgba(135, 131, 131, 0.238));
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5px;
+.bloqueNoticias {
+    /* seccion noticias gral */
+    width: 100%;
+    height: 150px;
+    grid-area: section;
+    background: linear-gradient(45deg, black, rgba(135, 131, 131, 0.238));
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
 
-    }
+}
 
-        .informacion {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
+.informacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
-        .liInformacion {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
-        
-        .liInformacion .li {
-            list-style: none;
-        }
+.liInformacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
 
-        .liInformacion .li a {
-        text-decoration: none;
-        }
+.liInformacion .li {
+    list-style: none;
+}
 
-        .liInformacion .li a:hover {
-        color: rgb(211, 183, 19);
-        transition: all 600ms;
-        }
+.liInformacion .li a {
+    text-decoration: none;
+}
 
-        .informacion div h3 {
-                text-align: center;
-        }
-        
-        .tradingView {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.liInformacion .li a:hover {
+    color: rgb(211, 183, 19);
+    transition: all 600ms;
+}
 
-        .tradingView h3 {
-            text-align: center;
-        }
-        
-        .tradingView a {
-            display: flex;
-            align-items: center;
-            height: 80px;
-        }
+.informacion div h3 {
+    text-align: center;
+}
 
-        .tradingView a img{
-            height: 100px;
-        }
-        
-        .tradingView a img:hover {
-            height: 105px;
-            transition: all 500ms;
-        }
+.tradingView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tradingView h3 {
+    text-align: center;
+}
+
+.tradingView a {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.tradingView a img {
+    height: 100px;
+}
+
+.tradingView a img:hover {
+    height: 105px;
+    transition: all 500ms;
+}
 
 /* finaliza seccion noticias */
 
@@ -287,48 +309,52 @@ body {                      /* generales de la web */
 
 /* comienza pie de pagina */
 
-    .footer {
-        width: 100%;
-        height: 150px;
-        grid-area: footer;
-        background: linear-gradient(45deg, rgba(57, 45, 6, 0.347), rgb(14, 13, 13));
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        margin: 5px;
-    }
+.footer {
+    width: 100%;
+    height: 150px;
+    grid-area: footer;
+    background: linear-gradient(45deg, rgba(57, 45, 6, 0.347), rgb(14, 13, 13));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+}
 
-    .divFooter {
-        text-align: center;
-        margin: 1%;
-    }
+.divFooter {
+    text-align: center;
+    margin: 1%;
+}
 
-    .divFooter ul li {
-        list-style: none;
-    }
+.divFooter ul li {
+    list-style: none;
+}
 
-    .divFooter img {            /* logo footer */
-        width: 130px;
-    }
+.divFooter img {
+    /* logo footer */
+    width: 130px;
+}
 
-    .divFooterRedes {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+.divFooterRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
-    
-    .divFooter li a img {       /* imagen redes pie */
-        width: 40px;
-        margin: 10px;
-    }
-    .divFooter li a img:hover {
-        width: 43px;
-        margin: 8.5px;
-    }
+
+.divFooter li a img {
+    /* imagen redes pie */
+    width: 40px;
+    margin: 10px;
+}
+
+.divFooter li a img:hover {
+    width: 43px;
+    margin: 8.5px;
+}
+
 /* finaliza seccion pie de pagina */
 
 
@@ -344,11 +370,11 @@ body {                      /* generales de la web */
     body {
         width: 0 auto;
         display: grid;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "section section"
-        "footer footer";
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section section"
+            "footer footer";
     }
 
 
@@ -390,6 +416,7 @@ body {                      /* generales de la web */
     .imagenNav {
         margin-left: 10%;
     }
+
     .menuNavItems {
         display: flex;
         align-items: flex-end;
@@ -401,10 +428,10 @@ body {                      /* generales de la web */
         margin: 0px;
     }
 
-    .menuNavItems .li a {      
+    .menuNavItems .li a {
         padding: 5px 5px;
     }
-    
+
     .lista {
         display: flex;
         flex-direction: column;
@@ -419,6 +446,7 @@ body {                      /* generales de la web */
     .menuNavDesplegable {
         display: flex;
     }
+
     /* responsive - final encabezado */
 
 
@@ -438,6 +466,7 @@ body {                      /* generales de la web */
         width: 90%;
         margin: 5px;
     }
+
     /* responsive - final sección main */
 
 
@@ -453,6 +482,7 @@ body {                      /* generales de la web */
     .informacion {
         color: black;
     }
+
     /* responsive - final bloque noticias */
 
 
@@ -460,13 +490,14 @@ body {                      /* generales de la web */
 
 
     /* responsive - seccion footer */
-.footer {
-    height: max-content;
-    font-size: x-small;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+    .footer {
+        height: max-content;
+        font-size: x-small;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     /* responsive - final footer */
 }
 
@@ -475,8 +506,8 @@ body {                      /* generales de la web */
 /* responsive - pagina "nosotros" - no video para menos de 1189 px */
 @media screen and (max-width: 1189px) {
 
-.videoNosotros {
-    display: none;
-}
+    .videoNosotros {
+        display: none;
+    }
 
 }

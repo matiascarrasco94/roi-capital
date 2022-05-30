@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="../estilos/responsive.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
 
     <header class="header">
 
-        <nav class="navPreciosBox"> <!-- Menú de navegación (precios btc eth usd) -->
+        <nav class="navPreciosBox">
+            <!-- Menú de navegación (precios btc eth usd) -->
             <ul class="navPrecios">
-                <li class="liPrecios"><a href="https://es.investing.com/currencies/usd-ars" target="_blank">PRECIO DÓLAR</a></li>
-                
-                <li class="liPrecios"><a href="https://es.investing.com/crypto/bitcoin/btc-usd" target="_blank">PRECIO BITCOIN</a></li>
-                
-                <li class="liPrecios"><a href="https://es.investing.com/crypto/ethereum/eth-usd" target="_blank">PRECIO ETHEREUM</a></li>
-                
+                <li class="liPrecios"><a href="https://es.investing.com/currencies/usd-ars" target="_blank">PRECIO
+                        DÓLAR</a></li>
+
+                <li class="liPrecios"><a href="https://es.investing.com/crypto/bitcoin/btc-usd" target="_blank">PRECIO
+                        BITCOIN</a></li>
+
+                <li class="liPrecios"><a href="https://es.investing.com/crypto/ethereum/eth-usd" target="_blank">PRECIO
+                        ETHEREUM</a></li>
+
                 <li class="liPrecios"><input type="search" placeholder="¿Qué estás buscando?"></li>
-                   
+
             </ul>
         </nav>
 
 
-        <nav class="menuNav"> <!-- bloque menú de navegación de página -->
+        <nav class="menuNav">
+            <!-- bloque menú de navegación de página -->
 
-            <div class="imagenNav"><!-- Bloque logo  -->
-                <a href="../index.html"><img src="../images/LOGO ROI CAPITAL .png"alt="Logotipo ROI CAPITAL"></a>
+            <div class="imagenNav">
+                <!-- Bloque logo  -->
+                <a href="../index.html"><img src="../images/LOGO ROI CAPITAL .png" alt="Logotipo ROI CAPITAL"></a>
             </div>
 
             <div class="menuNavItems">
-                <ul  class="lista">
-                    <li class="li"><a href="../index.html">INICIO</a></li> 
+                <ul class="lista">
+                    <li class="li"><a href="../index.html">INICIO</a></li>
                     <li class="li"><a href="../paginas/contacto.html"> CONTACTO</a></li>
                     <li class="li"><a href="../paginas/nosotros.html"> NOSOTROS</a></li>
                     <li class="li"><a href="../paginas/registrarse.html"> REGISTRARSE</a></li>
@@ -49,12 +56,12 @@
     </header>
 
     <br>
-    
+
     <main class="main">
 
         <div class="contenidoMain">
             <h2 style="color: rgb(75, 152, 240) ;">INICIO DE SESIÓN</h2>
-            
+
             <br>
 
             <form action="enviar.php" method="get" enctype="text/plain">
@@ -67,8 +74,10 @@
                 <br>
 
                 <div>
-                    <label for="password">Password:</label></label><!-- for e id: deben ser iguales para que se conecten -->
-                    <input type="password" id="Password" placeholder="Ingresá tu password"><!-- placeholder es para colocar ayuda al usurio en el recuadro -->
+                    <label for="password">Password:</label></label>
+                    <!-- for e id: deben ser iguales para que se conecten -->
+                    <input type="password" id="Password" placeholder="Ingresá tu password">
+                    <!-- placeholder es para colocar ayuda al usurio en el recuadro -->
                 </div>
 
                 <br>
@@ -77,7 +86,7 @@
                     <label for="">Mantener inicio de sesión</label>
                     <input type="checkbox">
                 </div>
-            
+
                 <br>
 
                 <div>
@@ -90,85 +99,90 @@
 
     <br>
 
-    <div class="bloqueNoticias"><!-- bloque noticias grles e invitación tradingview -->
+    <div class="bloqueNoticias">
+        <!-- bloque noticias grles e invitación tradingview -->
 
         <div class="informacion">
 
-                <div>
-                    <h3>PONETE AL TANTO DE LA ÚLTIMA INFORMACIÓN</h3>
-                </div>
+            <div>
+                <h3>PONETE AL TANTO DE LA ÚLTIMA INFORMACIÓN</h3>
+            </div>
 
-                <ul  class="liInformacion">
+            <ul class="liInformacion">
 
-                    <li class="li">
-                        >>>
-                    </li>
-                    <li class="li">
-                        <a href="https://es.investing.com/" target="_blank"> NOTICIAS</a>
-                    </li>
-                    <li class="li">
-                        <a href="https://es.investing.com/search/?q=bolsa&tab=quotes" target="_blank"> BOLSA</a>
-                    </li>
-                    <li class="li">
-                        <a href="https://es.investing.com/equities/" target="_blank"> EMPRESAS</a>
-                    </li>
-                    <li class="li">
-                        <a href="https://es.investing.com/search/?q=dolar&tab=news" target="_blank"> DÓLAR</a>
-                    </li>
-                    <li class="li">
-                        <<<
-                    </li>
-                </ul>
+                <li class="li">
+                    >>>
+                </li>
+                <li class="li">
+                    <a href="https://es.investing.com/" target="_blank"> NOTICIAS</a>
+                </li>
+                <li class="li">
+                    <a href="https://es.investing.com/search/?q=bolsa&tab=quotes" target="_blank"> BOLSA</a>
+                </li>
+                <li class="li">
+                    <a href="https://es.investing.com/equities/" target="_blank"> EMPRESAS</a>
+                </li>
+                <li class="li">
+                    <a href="https://es.investing.com/search/?q=dolar&tab=news" target="_blank"> DÓLAR</a>
+                </li>
+                <li class="li">
+                    <<< </li>
+            </ul>
 
         </div>
 
-    <div class="tradingView">
-         <h3>SUMATE A NUESTRO PERFIL DE TRADING VIEW</h3>
-         <!-- Ejemplo de perfil de tradingview -->
-        <a href="https://es.tradingview.com/u/frankeech/" target="_blank"><img src="../images/tradingview-logo-freelogovectors.net_.png" alt="logo trading view"></a>
-     </div>
-</div>
-
-
-<!-- comienza pie de página -->
-<footer class="footer">
-
-    <div class="divFooter">
-        <a href="../index.html"><img src="../images/LOGO ROI CAPITAL .png"alt="Logotipo ROI CAPITAL"></a>
+        <div class="tradingView">
+            <h3>SUMATE A NUESTRO PERFIL DE TRADING VIEW</h3>
+            <!-- Ejemplo de perfil de tradingview -->
+            <a href="https://es.tradingview.com/u/frankeech/" target="_blank"><img
+                    src="../images/tradingview-logo-freelogovectors.net_.png" alt="logo trading view"></a>
+        </div>
     </div>
 
-    <div class="divFooter">
-         <ul>
-            <li>
-                 Villa Mercedes,
-             </li>
-             <li>
-                San Luis, Argentina - 
-             </li>
-             <li>
-                 roi.capital@gmail.com
-            </li>
-        </ul>
-    </div>
 
-    <div class="divFooter">
-        <h5>VISITÁ NUESTRAS REDES</h5>
-            <ul class="divFooterRedes">
+    <!-- comienza pie de página -->
+    <footer class="footer">
+
+        <div class="divFooter">
+            <a href="../index.html"><img src="../images/LOGO ROI CAPITAL .png" alt="Logotipo ROI CAPITAL"></a>
+        </div>
+
+        <div class="divFooter">
+            <ul>
                 <li>
-                    <a href="https://www.instagram.com/roi.center/" target="_blank"> <img src="../images/logoinsta.png" alt="logo instagram"></a>
+                    Villa Mercedes,
                 </li>
-
                 <li>
-                    <a href="https://api.whatsapp.com/send?phone=5492657703178&text=Hola%20ROI%20CAPITAL!%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio!" target="_blank"> <img src="../images/wpplogo.png" alt="logo whatsapp"></a>
+                    San Luis, Argentina -
+                </li>
+                <li>
+                    roi.capital@gmail.com
                 </li>
             </ul>
-    </div>
+        </div>
 
-    <div class="divFooter">
-        <p><strong><em>Invertí con los mejores traders y de manera segura, invertí con ROI CAPITAL!</em></strong></p>
-    </div>
+        <div class="divFooter">
+            <h5>VISITÁ NUESTRAS REDES</h5>
+            <ul class="divFooterRedes">
+                <li>
+                    <a href="https://www.instagram.com/roi.center/" target="_blank"> <img src="../images/logoinsta.png"
+                            alt="logo instagram"></a>
+                </li>
 
-</footer>
-<!-- finaliza pie de página -->
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=5492657703178&text=Hola%20ROI%20CAPITAL!%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio!"
+                        target="_blank"> <img src="../images/wpplogo.png" alt="logo whatsapp"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="divFooter">
+            <p><strong><em>Invertí con los mejores traders y de manera segura, invertí con ROI CAPITAL!</em></strong>
+            </p>
+        </div>
+
+    </footer>
+    <!-- finaliza pie de página -->
 </body>
+
 </html>
