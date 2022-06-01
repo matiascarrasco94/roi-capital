@@ -18,6 +18,11 @@ body {
     align-items: center;
 }
 
+.videoNosotros iframe {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
 
 .bloqueNoticias {           /* seccion noticias gral */
     color: white;
