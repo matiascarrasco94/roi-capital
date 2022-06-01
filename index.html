@@ -10,55 +10,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- COMPATIBILIDAD CON EL NAVEGADOR DE EDGE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- RESPONSIVE -->
     <title>ROI CAPITAL</title> <!-- NOMBRE PESTAÑA NAVEGADOR -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 
 <body>
 
     <!-- fila de logo  + nav de precios y menu nav-->
-    <header class="header">
+    <header>
 
-        <nav class="navPreciosBox">
-            <!-- Menú de navegación (precios btc eth usd) -->
-            <ul class="navPrecios">
-                <li class="liPrecios"><a href="https://es.investing.com/currencies/usd-ars" target="_blank">PRECIO
-                        DÓLAR</a></li>
-
-                <li class="liPrecios"><a href="https://es.investing.com/crypto/bitcoin/btc-usd" target="_blank">PRECIO
-                        BITCOIN</a></li>
-
-                <li class="liPrecios"><a href="https://es.investing.com/crypto/ethereum/eth-usd" target="_blank">PRECIO
-                        ETHEREUM</a></li>
-
-                <li class="liPrecios"><input type="search" placeholder="¿Qué estás buscando?"></li>
-
-            </ul>
-        </nav>
-
-
-        <nav class="menuNav">
-            <!-- bloque menú de navegación de página -->
-
-            <div class="imagenNav">
-                <!-- Bloque logo  -->
-                <a href="./index.html"><img src="./images/LOGO ROI CAPITAL .png"
-                        alt="Logotipo ROI CAPITAL"></a>
-            </div>
-
-            <div class="menuNavItems">
-                <ul class="lista">
-                    <li class="li"><a href="./index.html">INICIO</a></li>
-                    <li class="li"><a href="./paginas/contacto.html"> CONTACTO</a></li>
-                    <li class="li"><a href="./paginas/nosotros.html"> NOSOTROS</a></li>
-                    <li class="li"><a href="./paginas/registrarse.html"> REGISTRARSE</a></li>
-                    <li class="li iniciarsesion"><a href="./paginas/iniciarsesión.html">INICIAR SESIÓN</a></li>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img src="./images/LOGO ROI CAPITAL .png" height="50 auto" alt="Logo-roi"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      NOSOTROS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./paginas/contacto.html">Contacto</a></li>
+                      <li><a class="dropdown-item" href="#">Nuestros empleados</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Ubicación</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/registrarse.html">Registrarme</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="./paginas/iniciarsesión.html">Iniciar Sesión</a>
+                  </li>
                 </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-warning" type="submit">Buscar</button>
+                </form>
+              </div>
             </div>
-
-
-        </nav>
+          </nav>
 
     </header>
     <!-- cierre de fila logo + nav de precios y menú nav -->
@@ -68,25 +66,47 @@
 
     <!-- comienza sección principal -->
 
-    <main class="main">
-
-        <div class="contenidoMain">
-            <h1>QUE NO TE GANE LA INFLACIÓN </h1>
-            <h2 class="subtituloMain">¡OPTIMIZÁ TUS AHORROS DE MANERA SEGURA!</h2>
-            <p class="parrafoMain">Bienvenidos a nuestra web oficial!
-                <br>
-                <br>
-                Somos una empresa de servicio de inversiones dedicada a aquellas personas que piensan en su futuro y
-                libertad financiera. Multiplicamos tus ahorros a través del tiempo de manera segura, veráz y
-                transparente. Podrás ver donde está tu dinero en cada momento y lo más importante... como crece!
-            </p>
-        </div>
-
-        <br>
-
-        <div class="imagenMain">
-            <img src="./images/dolares.png" alt="cohete de bitcoin to the moon">
-        </div>
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/13a635e3073a0dafd48c5b49ca6e3388.jpg" class="d-block w-100" alt="wall-street-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>QUE NO TE GANE LA INFLACIÓN</h5>
+                  <p>¡Optimizá tus ahorros de manera segura!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Donde-invertir-en-la-bolsa-de-valores-2.png" class="d-block w-100" alt="valores-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Bienvenidos a nuestra web oficial!</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wp5236283-trade-wallpapers.png" class="d-block w-100" alt="velas-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>WE ARE</h5>
+                  <p>Somos una empresa de servicio de inversiones dedicada a aquellas personas que piensan en su futuro y
+                    libertad financiera. Multiplicamos tus ahorros a través del tiempo de manera segura, veráz y
+                    transparente. Podrás ver donde está tu dinero en cada momento y lo más importante... como crece!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
     </main>
     <!-- Finaliza sección principal-->
@@ -94,93 +114,90 @@
     <br>
 
 
-    <div class="bloqueNoticias">
-        <!-- bloque noticias grles e invitación tradingview -->
+    <div class="bloqueNoticias"><!-- bloque noticias grles e invitación tradingview -->
 
         <div class="informacion">
 
-            <div>
-                <h3>PONETE AL TANTO DE LA ÚLTIMA INFORMACIÓN</h3>
-            </div>
+                <div>
+                    <h3>PONETE AL TANTO DE LA ÚLTIMA INFORMACIÓN</h3>
+                </div>
 
-            <ul class="liInformacion">
+                <ul  class="liInformacion">
 
-                <li class="li">
-                    >>>
-                </li>
-                <li class="li">
-                    <a href="https://es.investing.com/" target="_blank"> NOTICIAS</a>
-                </li>
-                <li class="li">
-                    <a href="https://es.investing.com/search/?q=bolsa&tab=quotes" target="_blank"> BOLSA</a>
-                </li>
-                <li class="li">
-                    <a href="https://es.investing.com/equities/" target="_blank"> EMPRESAS</a>
-                </li>
-                <li class="li">
-                    <a href="https://es.investing.com/search/?q=dolar&tab=news" target="_blank"> DÓLAR</a>
-                </li>
-                <li class="li">
-                    <<< </li>
-            </ul>
+                    <li class="li">
+                        >
+                    </li>
+                    <li class="li">
+                        <a href="https://es.investing.com/" target="_blank"> NOTICIAS</a>
+                    </li>
+                    <li class="li">
+                        <a href="https://es.investing.com/search/?q=bolsa&tab=quotes" target="_blank"> BOLSA</a>
+                    </li>
+                    <li class="li">
+                        <a href="https://es.investing.com/equities/" target="_blank"> EMPRESAS</a>
+                    </li>
+                    <li class="li">
+                        <a href="https://es.investing.com/search/?q=dolar&tab=news" target="_blank"> DÓLAR</a>
+                    </li>
+                    <li class="li">
+                        <
+                    </li>
+                </ul>
 
         </div>
 
-        <div class="tradingView">
-            <h3>SUMATE A NUESTRO PERFIL DE TRADING VIEW</h3>
-            <!-- Ejemplo de perfil de tradingview -->
-            <a href="https://es.tradingview.com/u/frankeech/" target="_blank"><img
-                    src="./images/tradingview-logo-freelogovectors.net_.png"
-                    alt="logo trading view"></a>
-        </div>
-    </div>
+    <div class="tradingView">
+         <h3>SUMATE A NUESTRO PERFIL DE TRADING VIEW</h3>
+         <!-- Ejemplo de perfil de tradingview -->
+        <a href="https://es.tradingview.com/u/frankeech/" target="_blank"><img src="./images/tradingview-logo-freelogovectors.net_.png" alt="logo trading view"></a>
+     </div>
+</div>
 
 
     <!-- comienza pie de página -->
     <footer class="footer">
 
         <div class="divFooter">
-            <a href="./index.html"><img src="./images/LOGO ROI CAPITAL .png" alt="Logotipo ROI CAPITAL"></a>
+            <a href="./index.html"><img src="./images/LOGO ROI CAPITAL .png"alt="Logotipo ROI CAPITAL"></a>
         </div>
 
         <div class="divFooter">
-            <ul>
+             <ul>
                 <li>
-                    Villa Mercedes,
-                </li>
-                <li>
-                    San Luis, Argentina -
-                </li>
-                <li>
-                    roi.capital@gmail.com
+                     Villa Mercedes,
+                 </li>
+                 <li>
+                    San Luis, Argentina - 
+                 </li>
+                 <li>
+                     roi.capital@gmail.com
                 </li>
             </ul>
         </div>
 
         <div class="divFooter">
-            <h5>VISITÁ NUESTRAS REDES</h5>
-            <ul class="divFooterRedes">
-                <li>
-                    <a href="https://www.instagram.com/roi.center/" target="_blank"> <img
-                            src="./images/logoinsta.png" alt="logo instagram"></a>
-                </li>
+            <h5 class="divFooter">Visitá nuestras redes</h5>
+                <ul class="divFooterRedes">
+                    <li>
+                        <a href="https://www.instagram.com/roi.center/" target="_blank"> <img src="./images/logoinsta.png" alt="logo instagram"></a>
+                    </li>
 
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5492657703178&text=Hola%20ROI%20CAPITAL!%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio!"
-                        target="_blank"> <img src="./images/wpplogo.png" alt="logo whatsapp"></a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5492657703178&text=Hola%20ROI%20CAPITAL!%20Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20servicio!" target="_blank"> <img src="./images/wpplogo.png" alt="logo whatsapp"></a>
+                    </li>
+                </ul>
         </div>
 
         <div class="divFooter">
-            <p><strong><em>Invertí con los mejores traders y de manera segura, invertí con ROI CAPITAL!</em></strong>
-            </p>
+            <p><strong><em>Invertí con los mejores traders y de manera segura, invertí con ROI CAPITAL!</em></strong></p>
         </div>
 
     </footer>
     <!-- finaliza pie de página -->
 
 
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
