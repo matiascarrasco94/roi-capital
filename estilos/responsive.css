@@ -4,6 +4,21 @@ body {
 
 /* comienza seccion noticias */
 
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.contenidoMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .bloqueNoticias {           /* seccion noticias gral */
     color: white;
     grid-area: section;
@@ -141,14 +156,15 @@ body {
         height: 200px;
     }
 
-    .informacion {
-        color: black;
-    }
     /* responsive - final bloque noticias */
 
+    .informacion div h3 {
+        font-size: medium;
+    }
 
-
-
+    .tradingView h3 {
+        font-size: medium;
+    }
 
     /* responsive - seccion footer */
 .footer {
@@ -159,15 +175,4 @@ body {
     flex-wrap: wrap;
 }
     /* responsive - final footer */
-}
-
-
-
-/* responsive - pagina "nosotros" - no video para menos de 1189 px */
-@media screen and (max-width: 1189px) {
-
-.videoNosotros {
-    display: none;
-}
-
 }

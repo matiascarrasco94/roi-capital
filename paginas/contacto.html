@@ -6,53 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
 
-    <header class="header">
-
-        <nav class="navPreciosBox">
-            <!-- Menú de navegación (precios btc eth usd) -->
-            <ul class="navPrecios">
-                <li class="liPrecios"><a href="https://es.investing.com/currencies/usd-ars" target="_blank">PRECIO
-                        DÓLAR</a></li>
-
-                <li class="liPrecios"><a href="https://es.investing.com/crypto/bitcoin/btc-usd" target="_blank">PRECIO
-                        BITCOIN</a></li>
-
-                <li class="liPrecios"><a href="https://es.investing.com/crypto/ethereum/eth-usd" target="_blank">PRECIO
-                        ETHEREUM</a></li>
-
-                <li class="liPrecios"><input type="search" placeholder="¿Qué estás buscando?"></li>
-
-            </ul>
-        </nav>
-
-
-        <nav class="menuNav">
-            <!-- bloque menú de navegación de página -->
-
-            <div class="imagenNav">
-                <!-- Bloque logo  -->
-                <a href="../index.html"><img src="../images/LOGO ROI CAPITAL .png" alt="Logotipo ROI CAPITAL"></a>
-            </div>
-
-            <div class="menuNavItems">
-                <ul class="lista">
-                    <li class="li"><a href="../index.html">INICIO</a></li>
-                    <li class="li"><a href="../paginas/contacto.html"> CONTACTO</a></li>
-                    <li class="li"><a href="../paginas/nosotros.html"> NOSOTROS</a></li>
-                    <li class="li"><a href="../paginas/registrarse.html"> REGISTRARSE</a></li>
-                    <li class="li iniciarsesion"><a href="../paginas/iniciarsesión.html">INICIAR SESIÓN</a></li>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../images/LOGO ROI CAPITAL .png" height="50 auto" alt="Logo-roi"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      NOSOTROS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                      <li><a class="dropdown-item" href="#">Nuestros empleados</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Ubicación</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./registrarse.html">Registrarme</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./iniciarsesión.html">Iniciar Sesión</a>
+                  </li>
                 </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-warning" type="submit">Buscar</button>
+                </form>
+              </div>
             </div>
-
-
-        </nav>
-
+          </nav>
     </header>
 
     <br>
