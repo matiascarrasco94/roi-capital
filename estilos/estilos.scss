@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: 0;
 }
+
+/* variables */
+/* Variables */
+$title-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+
 /* Seccion header y main utilizando bootstrap */
 
 body {
@@ -18,7 +23,7 @@ body {
         justify-content: space-around;
         align-items: center;
         padding: 5px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+        font-family: $title-font; /* uso la variable */
         .informacion {
             display: flex;
             flex-direction: column;
