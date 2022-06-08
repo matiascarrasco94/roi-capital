@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+/* Seccion header y main utilizando bootstrap */
+
+body {
+    background-color: rgb(29, 29, 29);
+/* Comienza sección noticias-tradingview */
+    .bloqueNoticias {
+        color: white;
+        grid-area: section;
+        background: linear-gradient(45deg, black, rgba(135, 131, 131, 0.238));
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Geneva, Tahoma, sans-serif, Times, serif;
+        .informacion {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            div {
+                h3 {
+                    text-align: center;
+                }
+            }
+            .liInformacion {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                .li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: chocolate;
+                        a:hover {
+                            color: rgb(211, 183, 19);
+                            transition: all 600ms;
+                        }
+                    }
+                }
+            }
+        }
+        .tradingView {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+                text-align: center;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                height: 80px;
+                img {
+                    height: 100px;
+                    img:hover {
+                        height: 105px;
+                        transition: all 500ms;
+                    }
+                }
+            }
+        }
+    }
+    /* finaliza sección noticias-tradingview */
+
+    /* comienza seccion pie de pagina */
+    .footer {
+        width: 100%;
+        height: 150px;
+        grid-area: footer;
+        background: linear-gradient(45deg, rgba(57, 45, 6, 0.347), rgb(14, 13, 13));
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1px;
+        color: white;
+        .divFooter {
+            text-align: center;
+            margin: 1%;
+            font-size: small;
+            ul {
+                li {
+                    list-style: none;
+                }
+            }
+            img {
+                width: 130px;
+            }
+            .divFooterRedes {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            li {
+                a {
+                    img {
+                        width: 40px;
+                        margin: 10px;
+                        img:hover {
+                            width: 43px;
+                            margin: 8.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    /* finaliza seccion pie de pagina */
+
+
+    /* responsive mobile - desktop */
+
+    @media screen and (max-width: 768px) {
+
+        /* responsive - seccion bloque noticias */
+        .bloqueNoticias {
+            font-size: small;
+            flex-direction: column;
+            height: 200px;
+        }
+
+        /* responsive - final bloque noticias */
+
+        .informacion div h3 {
+            font-size: medium;
+        }
+
+        .tradingView h3 {
+            font-size: medium;
+        }
+
+        /* responsive - seccion footer */
+        .footer {
+        height: max-content;
+        font-size: x-small;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+        /* responsive - final footer */
+    }
