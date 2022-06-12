@@ -11,12 +11,10 @@
 /* Seccion header y main utilizando bootstrap */
 body {
   background-color: #1d1d1d;
-  /* Comienza sección noticias-tradingview */
-  /* finaliza sección noticias-tradingview */
-  /* comienza seccion pie de pagina */
 }
 
-body .bloqueNoticias {
+/* Comienza sección noticias-tradingview */
+.bloqueNoticias {
   color: white;
   grid-area: section;
   background: linear-gradient(45deg, black, rgba(135, 131, 131, 0.238));
@@ -39,7 +37,7 @@ body .bloqueNoticias {
   /* uso la variable */
 }
 
-body .bloqueNoticias .informacion {
+.bloqueNoticias .informacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,11 +49,11 @@ body .bloqueNoticias .informacion {
       flex-wrap: wrap;
 }
 
-body .bloqueNoticias .informacion div h3 {
+.bloqueNoticias .informacion div h3 {
   text-align: center;
 }
 
-body .bloqueNoticias .informacion .liInformacion {
+.bloqueNoticias .informacion .liInformacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,22 +67,22 @@ body .bloqueNoticias .informacion .liInformacion {
       justify-content: space-around;
 }
 
-body .bloqueNoticias .informacion .liInformacion .li {
+.bloqueNoticias .informacion .liInformacion .li {
   list-style: none;
 }
 
-body .bloqueNoticias .informacion .liInformacion .li a {
+.bloqueNoticias .informacion .liInformacion .li a {
   text-decoration: none;
   color: chocolate;
 }
 
-body .bloqueNoticias .informacion .liInformacion .li a a:hover {
+.bloqueNoticias .informacion .liInformacion .li a:hover {
   color: #d3b713;
   -webkit-transition: all 600ms;
   transition: all 600ms;
 }
 
-body .bloqueNoticias .tradingView {
+.bloqueNoticias .tradingView {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,11 +95,11 @@ body .bloqueNoticias .tradingView {
           align-items: center;
 }
 
-body .bloqueNoticias .tradingView h3 {
+.bloqueNoticias .tradingView h3 {
   text-align: center;
 }
 
-body .bloqueNoticias .tradingView a {
+.bloqueNoticias .tradingView a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,17 +109,19 @@ body .bloqueNoticias .tradingView a {
   height: 80px;
 }
 
-body .bloqueNoticias .tradingView a img {
+.bloqueNoticias .tradingView a img {
   height: 100px;
 }
 
-body .bloqueNoticias .tradingView a img img:hover {
+.bloqueNoticias .tradingView a img:hover {
   height: 105px;
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
 
-body .footer {
+/* finaliza sección noticias-tradingview */
+/* comienza seccion pie de pagina */
+.footer {
   width: 100%;
   height: 150px;
   grid-area: footer;
@@ -144,21 +144,21 @@ body .footer {
   color: white;
 }
 
-body .footer .divFooter {
+.footer .divFooter {
   text-align: center;
   margin: 1%;
   font-size: small;
 }
 
-body .footer .divFooter ul li {
+.footer .divFooter ul li {
   list-style: none;
 }
 
-body .footer .divFooter img {
+.footer .divFooter img {
   width: 130px;
 }
 
-body .footer .divFooter .divFooterRedes {
+.footer .divFooter .divFooterRedes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,51 +174,15 @@ body .footer .divFooter .divFooterRedes {
           justify-content: center;
 }
 
-body .footer .divFooter li a img {
+.footer .divFooter li a img {
   width: 40px;
   margin: 10px;
 }
 
-body .footer .divFooter li a img img:hover {
+.footer .divFooter li a img:hover {
   width: 43px;
   margin: 8.5px;
 }
 
 /* finaliza seccion pie de pagina */
-/* responsive mobile - desktop */
-@media screen and (max-width: 768px) {
-  /* responsive - seccion bloque noticias */
-  .bloqueNoticias {
-    font-size: small;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 200px;
-  }
-  /* responsive - final bloque noticias */
-  .informacion div h3 {
-    font-size: medium;
-  }
-  .tradingView h3 {
-    font-size: medium;
-  }
-  /* responsive - seccion footer */
-  .footer {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    font-size: x-small;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  /* responsive - final footer */
-}
 /*# sourceMappingURL=estilos.css.map */

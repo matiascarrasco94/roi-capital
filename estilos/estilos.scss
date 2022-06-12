@@ -12,6 +12,7 @@ $title-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 body {
     background-color: rgb(29, 29, 29);
+}
 /* Comienza sección noticias-tradingview */
     .bloqueNoticias {
         color: white;
@@ -43,7 +44,7 @@ body {
                     a {
                         text-decoration: none;
                         color: chocolate;
-                        a:hover {
+                        &:hover {
                             color: rgb(211, 183, 19);
                             transition: all 600ms;
                         }
@@ -64,7 +65,7 @@ body {
                 height: 80px;
                 img {
                     height: 100px;
-                    img:hover {
+                    &:hover {
                         height: 105px;
                         transition: all 500ms;
                     }
@@ -105,12 +106,13 @@ body {
                 align-items: center;
                 justify-content: center;
             }
+            
             li {
                 a {
                     img {
                         width: 40px;
                         margin: 10px;
-                        img:hover {
+                        &:hover {
                             width: 43px;
                             margin: 8.5px;
                         }
@@ -119,38 +121,4 @@ body {
             }
         }
     }
-}
     /* finaliza seccion pie de pagina */
-
-
-    /* responsive mobile - desktop */
-
-    @media screen and (max-width: 768px) {
-
-        /* responsive - seccion bloque noticias */
-        .bloqueNoticias {
-            font-size: small;
-            flex-direction: column;
-            height: 200px;
-        }
-
-        /* responsive - final bloque noticias */
-
-        .informacion div h3 {
-            font-size: medium;
-        }
-
-        .tradingView h3 {
-            font-size: medium;
-        }
-
-        /* responsive - seccion footer */
-        .footer {
-        height: max-content;
-        font-size: x-small;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        }
-        /* responsive - final footer */
-    }
