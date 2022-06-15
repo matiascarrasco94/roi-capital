@@ -185,4 +185,24 @@ body {
 }
 
 /* finaliza seccion pie de pagina */
+/* maps */
+.formulario-nombre {
+  color: yellow;
+}
+
+.formulario-apellido {
+  color: #a8a804;
+}
+
+.formulario-email {
+  color: blue;
+}
+
+.formulario-password {
+  color: grey;
+}
+
+.titulo {
+  background: yellow;
+}
 /*# sourceMappingURL=estilos.css.map */

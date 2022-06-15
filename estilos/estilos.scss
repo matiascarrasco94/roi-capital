@@ -122,3 +122,23 @@ body {
         }
     }
     /* finaliza seccion pie de pagina */
+
+
+    /* maps */
+
+    $colores: (
+        nombre: yellow,
+        apellido: rgb(168, 168, 4),
+        email: blue,
+        password: grey,
+    );
+
+    @each $nombre, $valor in $colores {
+        .formulario-#{$nombre} {
+            color: $valor;
+    }
+}
+
+.titulo {
+    background: map-get($colores, nombre);
+}

@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
+    <meta name="description" content="Somos una empresa de servicio de inversiones dedicada a aquellas personas que piensan en su futuro y
+    libertad financiera. Multiplicamos tus ahorros a través del tiempo de manera segura, veráz y
+    transparente">
+    <meta name="keywords" content="invertir, ahorro, criptomonedas, mercado, divisas, bolsa, dolar, inflacion, servicio">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/responsive.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
 <header>
@@ -59,7 +64,7 @@
 
         <form action="enviar.php" method="get" enctype="text/plain">
 
-            <div>
+            <div  class="formulario-nombre">
                 <label for="nombre">Nombre:</label></label><!-- for e id: deben ser iguales para que se conecten -->
                 <input style="color: black" type="text" id="nombre" placeholder="Ingresá tu nombre">
                 <!-- placeholder es para colocar ayuda al usurio en el recuadro -->
@@ -67,7 +72,7 @@
 
             <br>
 
-            <div>
+            <div class="formulario-apellido">
                 <label for="Apellido">Apellido:</label></label><!-- for e id: deben ser iguales para que se conecten -->
                 <input style="color: black" type="text" id="apellido" placeholder="Ingresá tu apellido">
                 <!-- placeholder es para colocar ayuda al usurio en el recuadro -->
@@ -75,14 +80,14 @@
 
             <br>
 
-            <div>
+            <div class="formulario-email">
                 <label for="email"> Email:</label>
                 <input style="color: black" type="email" id="email" required placeholder="Ingresá tu e-mail">
             </div>
 
             <br>
 
-            <div>
+            <div class="formulario-password">
                 <label for="password">Password:</label></label><!-- for e id: deben ser iguales para que se conecten -->
                 <input style="color: black" type="password" id="Password" placeholder="Ingresá una password">
                 <!-- placeholder es para colocar ayuda al usurio en el recuadro -->
