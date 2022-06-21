@@ -18,10 +18,10 @@ body {
     align-items: center;
 }
 
-.videoNosotros iframe {
+.videoNosotros {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    align-content: center;
 }
 
 .bloqueNoticias {           /* seccion noticias gral */

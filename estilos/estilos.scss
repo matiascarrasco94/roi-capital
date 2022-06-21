@@ -13,6 +13,48 @@ $title-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 body {
     background-color: rgb(29, 29, 29);
 }
+
+/* secciones-main */
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+        .contenidoMain {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .parrafoMain {
+                margin: 20px;
+            }
+            h2 {
+                text-align: center;
+            }
+        }
+        .videoNosotros {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+/* formulario-registrarse */
+
+    .formulario {
+        margin-left: 70px;
+        margin-right: 70px;
+        color: white;
+        .needs-validation {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-content: center;   
+        }
+    }
+/* fin formulario-registrarse */
+
+
 /* Comienza sección noticias-tradingview */
     .bloqueNoticias {
         color: white;
@@ -127,8 +169,8 @@ body {
     /* maps */
 
     $colores: (
-        nombre: yellow,
-        apellido: rgb(168, 168, 4),
+        nombre: #c2901c,
+        apellido: black,
         email: blue,
         password: grey,
     );
@@ -142,4 +184,39 @@ body {
 
 .titulo {
     background: map-get($colores, nombre);
+    color: map-get($colores, apellido );
+    font-family: $title-font;
+}
+
+
+/* responsive mobile - desktop */
+
+@media screen and (max-width: 768px) {
+
+    /* responsive - seccion bloque noticias */
+    .bloqueNoticias {
+        font-size: small;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    /* responsive - final bloque noticias */
+
+    .informacion div h3 {
+        font-size: medium;
+    }
+
+    .tradingView h3 {
+        font-size: medium;
+    }
+
+    /* responsive - seccion footer */
+.footer {
+    height: max-content;
+    font-size: x-small;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    /* responsive - final footer */
 }

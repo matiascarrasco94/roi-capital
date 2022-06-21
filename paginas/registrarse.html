@@ -11,7 +11,6 @@
     transparente">
     <meta name="keywords" content="invertir, ahorro, criptomonedas, mercado, divisas, bolsa, dolar, inflacion, servicio">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos/responsive.css">
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
@@ -32,15 +31,15 @@
                   NOSOTROS
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./paginas/contacto.html">Ubicación</a></li>
-                  <li><a class="dropdown-item" href="./paginas/nosotros.html">¿Quienes somos?</a></li>
+                  <li><a class="dropdown-item" href="../paginas/contacto.html">Ubicación</a></li>
+                  <li><a class="dropdown-item" href="../paginas/nosotros.html">¿Quienes somos?</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./registrarse.html">Registrarme</a>
+                <a class="nav-link" href="../paginas/registrarse.html">Registrarme</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./iniciarsesión.html">Iniciar Sesión</a>
+                <a class="nav-link" href="../paginas/iniciarsesión.html">Iniciar Sesión</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -59,73 +58,70 @@
     <div class="contenidoMain">
         <h2>REGISTRARSE</h2>
         <h4>Completá los siguientes campos:</h4>
-
-        <br>
-
-        <form action="enviar.php" method="get" enctype="text/plain">
-
-            <div  class="formulario-nombre">
-                <label for="nombre">Nombre:</label></label><!-- for e id: deben ser iguales para que se conecten -->
-                <input style="color: black" type="text" id="nombre" placeholder="Ingresá tu nombre">
-                <!-- placeholder es para colocar ayuda al usurio en el recuadro -->
-            </div>
-
-            <br>
-
-            <div class="formulario-apellido">
-                <label for="Apellido">Apellido:</label></label><!-- for e id: deben ser iguales para que se conecten -->
-                <input style="color: black" type="text" id="apellido" placeholder="Ingresá tu apellido">
-                <!-- placeholder es para colocar ayuda al usurio en el recuadro -->
-            </div>
-
-            <br>
-
-            <div class="formulario-email">
-                <label for="email"> Email:</label>
-                <input style="color: black" type="email" id="email" required placeholder="Ingresá tu e-mail">
-            </div>
-
-            <br>
-
-            <div class="formulario-password">
-                <label for="password">Password:</label></label><!-- for e id: deben ser iguales para que se conecten -->
-                <input style="color: black" type="password" id="Password" placeholder="Ingresá una password">
-                <!-- placeholder es para colocar ayuda al usurio en el recuadro -->
-            </div>
-
-            <br>
-
-            <div>
-                <label for="password">Repite tu password:</label></label>
-                <!-- for e id: deben ser iguales para que se conecten -->
-                <input style="color: black" type="password" id="Password" placeholder="Repite la password">
-                <!-- placeholder es para colocar ayuda al usurio en el recuadro -->
-            </div>
-
-            <br>
-
-            <div>
-                <button style="color: black">Enviar código de verificación</button>
-            </div>
-
-            <br>
-
-            <div>
-                <textarea style="color: black" name="" id="" cols="60" rows="1"
-                    placeholder="Ingresá el código de verificación que enviamos a tu e-mail"></textarea>
-            </div>
-
-            <br>
-
-            <div>
-                <button style="color: black">REGISTRARME</button>
-            </div>
-
-        </form>
-
     </div>
 
 </main>
+<br>
+    <div class="formulario">
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-5 mb-3">
+                <label for="validationTooltip01">Nombres</label>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="Nombres" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-5 mb-3">
+                <label for="validationTooltip02">Apellidos</label>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Apellidos" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-5 mb-3">
+                <label for="validationTooltipUsername">Nombre de usuario</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Elige un nombre de usuario" aria-describedby="validationTooltipUsernamePrepend" required>
+                  <div class="invalid-tooltip">
+                    Elige otro nombre de usuario
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-5 mb-3">
+                <label for="validationTooltip03">Ciudad</label>
+                <input type="text" class="form-control" id="validationTooltip03" placeholder="Ciudad" required>
+                <div class="invalid-tooltip">
+                  Coloca una ciudad válida.
+                </div>
+              </div>
+              <div class="col-md-5 mb-3">
+                <label for="validationTooltip04">Provincia</label>
+                <input type="text" class="form-control" id="validationTooltip04" placeholder="Provincia" required>
+                <div class="invalid-tooltip">
+                  Coloca una provincia válida.
+                </div>
+              </div>
+              <div class="col-md-5 mb-3">
+                <label for="validationTooltip05">Código Postal</label>
+                <input type="text" class="form-control" id="validationTooltip05" placeholder="C.P" required>
+                <div class="invalid-tooltip">
+                  Coloca un código postal válido.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar formulario</button>
+        </form>
+    </div>
+
+
+
+
 
 <br>
 
@@ -141,7 +137,7 @@
         <ul class="liInformacion">
 
             <li class="li">
-                >>>
+                >
             </li>
             <li class="li">
                 <a href="https://es.investing.com/" target="_blank"> NOTICIAS</a>
@@ -156,7 +152,7 @@
                 <a href="https://es.investing.com/search/?q=dolar&tab=news" target="_blank"> DÓLAR</a>
             </li>
             <li class="li">
-                <<< </li>
+                < </li>
         </ul>
 
     </div>
@@ -192,7 +188,7 @@
     </div>
 
     <div class="divFooter">
-        <h5>VISITÁ NUESTRAS REDES</h5>
+        <h5 class="divFooter">Visitá nuestras redes</h5>
         <ul class="divFooterRedes">
             <li>
                 <a href="https://www.instagram.com/roi.center/" target="_blank"> <img src="../images/logoinsta.png"
@@ -214,7 +210,7 @@
 </footer>
 <!-- finaliza pie de página -->
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
